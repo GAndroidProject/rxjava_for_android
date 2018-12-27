@@ -17,7 +17,7 @@ import com.trello.rxlifecycle.components.support.RxFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import rx.Observable;
 import rx.Subscriber;
@@ -37,10 +37,10 @@ public class ConcatFragment extends RxFragment {
     private static final String LOCATION = "location:";
     private static final String NET = "net:";
 
-    @Bind(R.id.view_load)
+    @BindView(R.id.view_load)
     ProgressWheel loadView;
 
-    @Bind(R.id.lv_list)
+    @BindView(R.id.lv_list)
     ListView lv_list;
 
     @Nullable

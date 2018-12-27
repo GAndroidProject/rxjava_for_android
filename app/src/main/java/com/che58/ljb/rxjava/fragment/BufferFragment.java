@@ -16,7 +16,7 @@ import com.trello.rxlifecycle.components.support.RxFragment;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.Observable;
@@ -29,16 +29,16 @@ import rx.functions.Action1;
  */
 public class BufferFragment extends RxFragment {
 
-    @Bind(R.id.btn_buffer_count)
+    @BindView(R.id.btn_buffer_count)
     Button btn_buffer_count;
 
-    @Bind(R.id.btn_buffer_count_skip)
+    @BindView(R.id.btn_buffer_count_skip)
     Button btn_buffer_count_skip;
 
-    @Bind(R.id.et_input)
+    @BindView(R.id.et_input)
     EditText et_input;
 
-    @Bind(R.id.tv_output)
+    @BindView(R.id.tv_output)
     TextView tv_output;
 
     @Nullable

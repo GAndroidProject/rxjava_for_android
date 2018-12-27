@@ -10,7 +10,7 @@ import android.widget.EditText;
 import com.che58.ljb.rxjava.R;
 import com.trello.rxlifecycle.components.support.RxFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.subjects.PublishSubject;
@@ -21,7 +21,7 @@ import rx.subjects.PublishSubject;
  */
 public class PublishSubjectTopFragment extends RxFragment {
 
-    @Bind(R.id.et_input)
+    @BindView(R.id.et_input)
     EditText et_input;
 
     private final PublishSubject<String> publishSubject;

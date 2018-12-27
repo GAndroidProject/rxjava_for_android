@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.Observable;
@@ -33,7 +33,7 @@ import rx.functions.Action1;
  * Created by ljb on 2016/3/28.
  */
 public class LoopFragment extends RxFragment {
-    @Bind(R.id.viewpager)
+    @BindView(R.id.viewpager)
     ViewPager mViewPager;
 
     private static final int[] DATAS = new int[]{R.drawable.pic_1, R.drawable.pic_2, R.drawable.pic_3};
